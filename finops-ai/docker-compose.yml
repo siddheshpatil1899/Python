@@ -1,0 +1,18 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres:16
+    container_name: finops_postgres
+    restart: always
+    environment:
+      POSTGRES_USER: finops_user
+      POSTGRES_PASSWORD: finops_password
+      POSTGRES_DB: finops_ai
+    ports:
+      - "5432:5432"
+    volumes:
+      - finops_postgres_data:/var/lib/postgresql/data
+
+volumes:
+  finops_postgres_data:

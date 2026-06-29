@@ -1,0 +1,7 @@
+provider,sku,region,hourly_rate,price_per_gb_month,monthly_base_rate,updated_at
+aws,m5.large,us-east-1,0.096,,,2026-06-25 07:33:57.696091+00:00
+aws,m5.xlarge,us-east-1,0.192,,,2026-06-25 07:33:57.696091+00:00
+aws,m5.2xlarge,us-east-1,0.384,,,2026-06-25 07:33:57.696091+00:00
+aws,gp3,us-east-1,,0.08,,2026-06-25 07:33:57.696091+00:00
+aws,application,us-east-1,,,16.2,2026-06-25 07:33:57.696091+00:00
+aws,db.t3.medium,us-east-1,0.068,,,2026-06-25 07:33:57.696091+00:00
