@@ -182,3 +182,34 @@
     border-right-color: var(--border);
   }
 }
+.stat-card {
+  padding: 20px;
+  border-radius: 16px;
+  background: #ffffff;
+  color: #111827;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.stat-blue {
+  background: #e8f1ff;
+  color: #0b4ea2;
+}
+
+.stat-green {
+  background: #e8f8ef;
+  color: #137333;
+}
+
+.stat-red {
+  background: #fdecec;
+  color: #b3261e;
+}
+
+.stat-purple {
+  background: #f3e8ff;
+  color: #6b21a8;
+}
+.stat-default {
+  background: #ffffff;
+  color: #111827;
+}

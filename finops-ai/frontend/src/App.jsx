@@ -28,10 +28,11 @@ import {
   runWasteScan,
   askChatbot,
 } from "./api";
+import "./App.css";
 
-function StatCard({ title, value, subtitle }) {
+function StatCard({ title, value, subtitle, color = "default" }) {
   return (
-    <div className="card stat-card">
+    <div className={`stat-card stat-${color}`}>
       <p className="muted">{title}</p>
       <h2>{value}</h2>
       <span>{subtitle}</span>
@@ -229,21 +230,25 @@ function App() {
                 title="Total Cost"
                 value={`$${costSummary?.total_cost ?? 0}`}
                 subtitle={`${costSummary?.record_count ?? 0} records`}
+                color="blue"
               />
               <StatCard
                 title="Waste Savings"
                 value={`$${wasteSummary?.total_estimated_monthly_saving ?? 0}`}
                 subtitle={`${wasteSummary?.active_findings ?? 0} active findings`}
+                color="green"
               />
               <StatCard
                 title="Anomaly Delta"
                 value={`$${anomalySummary?.active_delta_cost ?? 0}`}
                 subtitle={`${anomalySummary?.active_anomalies ?? 0} active anomalies`}
+                color="red"
               />
               <StatCard
                 title="Forecast"
                 value={`$${forecastSummary?.total_forecasted_cost ?? 0}`}
                 subtitle={forecastSummary?.budget_status ?? "Run forecast"}
+                color="purple"
               />
             </div>
 
