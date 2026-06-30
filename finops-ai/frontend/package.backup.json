@@ -4,9 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "concurrently -n BACKEND,FRONTEND -c blue,green \"cmd /c start-backend.bat\" \"vite\"",
-    "dev:frontend": "vite",
-    "dev:backend": "cmd /c start-backend.bat",
+    "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
